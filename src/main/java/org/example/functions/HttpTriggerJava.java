@@ -19,6 +19,7 @@ public class HttpTriggerJava {
             final ExecutionContext context) {
         context.getLogger().info("Java HTTP trigger processed a request.");
 
+
         // Parse query parameter
         String query = request.getQueryParameters().get("name");
         String name = request.getBody().orElse(query);
